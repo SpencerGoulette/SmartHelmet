@@ -9,10 +9,10 @@ Steven Ferrarese, CEN
 A helmet-mounted device that obtains gyro pitch, roll, and yaw data, and accelerometer x, y, and z data from attached sensors is proposed.  The device will then transmit the data via bluetooth to an Android app on the user’s phone. The app will display the orientation of the helmet. The app will be able to send a text to a specified number. The device will be powered by a rechargeable battery and will be recharged through micro-USB.
 
 Inputs:
--Movement of device.
+- Movement of device.
 
 Outputs:
--Display biker's helmet orientation on a cell phone.
+- Display biker's helmet orientation on a cell phone.
 
 Specifications:
 
