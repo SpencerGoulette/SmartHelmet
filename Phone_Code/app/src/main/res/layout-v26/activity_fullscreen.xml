@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blebutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="148dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/stop_searching"
+            app:layout_constraintBottom_toTopOf="@+id/search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="149dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="121dp"
+            android:text="@android:string/search_go"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/connect" />
+
+        <Button
+            android:id="@+id/buttonsendtextscreen"
+            android:layout_width="149dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="121dp"
+            android:text="@string/send_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/blestart"
+            android:layout_width="157dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginBottom="31dp"
+            android:text="@string/start_searching"
+            app:layout_constraintBottom_toTopOf="@+id/connect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="118dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

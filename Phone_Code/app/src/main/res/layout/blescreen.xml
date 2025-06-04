@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/getangle"
+            android:layout_width="169dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginBottom="5dp"
+            android:text="Get Data Angle"
+            app:layout_constraintBottom_toTopOf="@+id/reconnect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getdatagyro" />
+
+        <Button
+            android:id="@+id/getdatagyro"
+            android:layout_width="169dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginBottom="5dp"
+            android:text="Get Data gyro/acc"
+            app:layout_constraintBottom_toTopOf="@+id/getangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accdata" />
+
+        <TextView
+            android:id="@+id/blestatus"
+            android:layout_width="405dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/gyrodata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/accdata"
+            android:layout_width="405dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gyrodata"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/reconnect"
+            android:layout_width="169dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="121dp"
+            android:text="reconnect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getangle" />
+
+        <TextView
+            android:id="@+id/gyrodata"
+            android:gravity="center"
+            android:layout_width="405dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/accdata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blestatus" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginBottom="51dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reconnect"
+            app:srcCompat="@drawable/arrow"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/angletext"
+            android:layout_width="93dp"
+
+            android:layout_height="31dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="146dp"
+            android:layout_marginBottom="38dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
